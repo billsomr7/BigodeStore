@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lexend", sans-serif;
+}
+
+header {
+  background-image: url(../img/banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & nav {
+    display: flex;
+    padding: 16px 92px;
+    justify-content: space-between;
+    align-items: center;
+
+    & .navbar {
+      display: flex;
+      gap: 40px;
+
+      & a {
+        color: #EFEFEFB2;
+      }
+
+      & .active {
+        color: #fff;
+      }
+
+    }
+
+    & .btns {
+      display: flex;
+      gap: 16px;
+
+      & a {
+        background-color: #3B44F6;
+        padding: 11px 17.5px;
+        border-radius: 8px;
+        color: #fff;
+        border: 1px solid transparent;
+      }
+
+      & a:last-child {
+        background-color: transparent;
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  & .hero {
+
+    padding: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    height: calc(100vh - 95px);
+    color: #fff;
+
+    & .content {
+
+      & h1 {
+        font-size: 48px;
+        margin-bottom: 26px;
+      }
+
+      & p {
+        width: 417px;
+        font-size: 24px;
+      }
+
+
+    }
+
+    & a {
+      width: 162px;
+      text-align: center;
+      background-color: #3B44F6;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 8px;
+    }
+  }
+}
+
+main {
+  #why-us {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 70px 95px;
+    align-items: center;
+    text-align: center;
+
+    & .title {
+      align-items: center;
+
+      & h2 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+
+      & p {
+        width: 473px;
+        font-size: 18px;
+        color: #323232;
+      }
+    }
+
+    & .cards {
+      display: flex;
+      justify-content: space-between;
+
+      & .card {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 21px;
+
+        & p {
+          width: 202px;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+  & #games-genres {
+    
+    padding: 40px 92px;
+
+    & .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    & .cards{
+      display: flex;
+      justify-content: space-between;
+
+      & a{
+        background-image: url(../img/stardew.svg);
+        width: 250px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+      }
+    }
+  }
+}
